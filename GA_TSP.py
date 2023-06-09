@@ -136,7 +136,7 @@ def draw_H(citys, best_gens):
         ax.add_patch(p1)
         ax.add_patch(p2)
         ax.plot((citys[from_][0], citys[to_][0]), (citys[from_][1], citys[to_][1]), color='red')
-        ax.annotate(s=chr(97 + to_), xy=citys[to_], xytext=(-8, -4), textcoords='offset points', fontsize=20)
+        ax.annotate(text=chr(97 + to_), xy=citys[to_], xytext=(-8, -4), textcoords='offset points', fontsize=20)
     ax.axis('equal')
     ax.grid()
     plt.show()
